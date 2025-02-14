@@ -13,11 +13,6 @@ The dataset contains various biological features of crabs, such as:
 - **Training Set**: Labeled dataset with features and corresponding ages.
 - **Test Set**: Dataset with features but without age labels (participants submit predicted ages for evaluation).
 
-## 🎯 Objective
-Participants need to build a **regression model** that minimizes **Mean Absolute Error (MAE)** on the test set:
-
-\[ MAE = \frac{1}{n} \sum_{i=1}^{m} |y - \hat{y}| \]
-
 ## 🔄 Data Preprocessing
 ### 🏷️ Encoding
 - **Categorical Encoding**: Label Encoding was used for the "Gender" column
@@ -30,6 +25,9 @@ To ensure robust predictions and prevent overfitting, we incorporate **regulariz
 - **L1 Regularization (Lasso Regression)**: Shrinks less important feature weights to zero.
 - **L2 Regularization (Ridge Regression)**: Reduces overfitting by penalizing large coefficients.
 - **Elastic Net**: A combination of L1 and L2 regularization.
+
+  ## 📏 Model Evaluation
+- MAE was chosen for its interpretability and robustness, measuring the average absolute error between actual and predicted ages. It is less sensitive to outliers than MSE, ensuring a balanced and fair evaluation.
 
 ## 📊 Visualizations and Plots
 - **Feature Distribution Plots**: Histograms and KDE plots to visualize feature distributions.
