@@ -15,7 +15,7 @@ The dataset contains various biological features of crabs, such as:
 
 ## 🔄 Data Preprocessing
 ### 🏷️ Encoding
-- **Categorical Encoding**: Label Encoding was used for the "Gender" column
+- **Categorical Encoding**: Label Encoding was used for the "Gender" column.
 
 ### ⚖️ Standardization
 - **Feature Scaling**: We apply **StandardScaler** to ensure all numerical features are on a similar scale, improving model convergence.
